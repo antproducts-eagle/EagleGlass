@@ -1,0 +1,9 @@
+{
+  "label": "Produktlinie",
+  "heading": "Zwei Glasvarianten",
+  "description": "Ob Ihre Kunden kristallklare Sicht oder totale Privatsphäre wünschen — Eagle Glass liefert, mit derselben Premium-Qualität in jedem Protektor.",
+  "products": [
+    { "name": "Premium Glass", "description": "Kristallklares 9H gehärtetes Glas mit Anti-Fingerabdruck-Beschichtung für makellosen täglichen Schutz.", "image": "/images/variations/left.png" },
+    { "name": "Privacy Glass", "description": "Fortschrittlicher Blickschutzfilter blockiert seitliche Einsicht bei voller Frontalklarheit.", "image": "/images/variations/right.png" }
+  ]
+}

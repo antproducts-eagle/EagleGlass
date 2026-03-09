@@ -1,0 +1,10 @@
+{
+  "label": "Retail advantage",
+  "heading": "Benefits for retailers",
+  "description": "Eagle Glass was built with one mission: give retailers a screen protector that outsells, outshines, and outperforms everything else on the shelf.",
+  "cards": [
+    { "title": "Higher margins with faster turnover", "image": "/images/benefits/sell-premium.png" },
+    { "title": "A truly premium product your customers trust", "image": "/images/benefits/sell-premium2.png" },
+    { "title": "Never out of stock — backed by our deep inventory", "image": "/images/benefits/full-stock.png" }
+  ]
+}

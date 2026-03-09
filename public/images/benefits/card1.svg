@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="565" viewBox="0 0 540 565">
+  <rect width="540" height="565" fill="#e0e0e0" rx="8"/>
+  <rect x="10" y="10" width="520" height="545" fill="none" stroke="#bbb" stroke-width="2" rx="4"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="20" fill="#999">Fast Turnover</text>
+</svg>

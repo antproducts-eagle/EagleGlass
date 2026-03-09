@@ -1,0 +1,23 @@
+{
+  "label": "Technologie",
+  "heading": "Verre renforcé 6 couches",
+  "description": "Chaque protecteur Eagle Glass est conçu avec six couches de précision qui travaillent ensemble pour offrir une clarté, une résistance et une longévité inégalées.",
+  "layers": [
+    { "id": "anti-fingerprint", "name": "Revêtement anti-traces", "description": "Revêtement oléophobe avancé qui repousse les huiles et traces pour un écran impeccable toute la journée.", "position": { "top": "12%", "left": "25%" } },
+    { "id": "tempered-glass", "name": "Verre trempé 9H", "description": "Dureté 9H de grade militaire résistant aux rayures de clés, pièces et impacts quotidiens.", "position": { "top": "35%", "left": "55%" } },
+    { "id": "shatter-proof", "name": "Film anti-éclats", "description": "Film de sécurité intégré qui maintient les fragments en cas d'impact — zéro bord tranchant, zéro risque.", "position": { "top": "58%", "left": "30%" } },
+    { "id": "adhesive", "name": "Adhésif silicone", "description": "Adhésif de précision sans bulles qui s'aligne parfaitement du premier coup et se retire proprement.", "position": { "top": "78%", "left": "50%" } }
+  ],
+  "specs": [
+    { "value": "9H", "label": "Dureté" },
+    { "value": "0.3", "unit": "mm", "label": "Épaisseur" },
+    { "value": "99.9", "unit": "%", "label": "Transparence" },
+    { "value": "6", "label": "Couches" }
+  ],
+  "bulletPoints": [
+    "Perception premium instantanée en rayon",
+    "Clarté cristalline à 99,9% de transparence",
+    "Installation sans bulles et sans effort"
+  ],
+  "layersImage": "/images/glass-layers/layers-phone.png"
+}

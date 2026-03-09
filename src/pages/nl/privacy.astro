@@ -1,0 +1,10 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PrivacyContent from "../../components/sections/PrivacyContent.astro";
+import privacyData from "../../content/nl/privacy.json";
+import navbarData from "../../content/nl/navbar.json";
+---
+
+<BaseLayout title="Privacybeleid — Eagle Glass">
+  <PrivacyContent data={privacyData} navbar={navbarData} lang="nl" />
+</BaseLayout>

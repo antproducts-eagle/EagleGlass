@@ -1,0 +1,10 @@
+{
+  "label": "Retailvoordeel",
+  "heading": "Voordelen voor retailers",
+  "description": "Eagle Glass is gebouwd met één missie: retailers een screenprotector bieden die alles in het schap overtreft in verkoop, uitstraling en prestatie.",
+  "cards": [
+    { "title": "Hogere marges met snellere omzet", "image": "/images/benefits/sell-premium.png" },
+    { "title": "Een écht premium product dat klanten vertrouwen", "image": "/images/benefits/sell-premium2.png" },
+    { "title": "Nooit zonder voorraad — dankzij onze grote inventaris", "image": "/images/benefits/full-stock.png" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "label": "FAQ",
+  "heading": "Questions answered",
+  "description": "Everything you need to know about partnering with Eagle Glass.",
+  "items": [
+    { "question": "What makes Eagle Glass different from other screen protectors?", "answer": "Eagle Glass features proprietary 6-layer reinforced glass with 9H hardness, anti-fingerprint coating, and shatter-proof technology — all housed in a reusable steel case that creates instant premium appeal on your shelf. Unlike generic protectors, Eagle Glass is engineered to sell itself." },
+    { "question": "What are the minimum order requirements?", "answer": "We offer flexible order tiers starting from just 50 units, perfect for testing in a single location. For multi-store chains, we provide custom volume packages with dedicated account support and priority fulfillment." },
+    { "question": "How does the steel packaging impact sales?", "answer": "Our retail partners consistently report 2-3x faster sell-through compared to plastic-packaged competitors. The steel case creates a tactile premium experience — customers pick it up, feel the quality, and convert. It also doubles as a reusable storage case, adding genuine perceived value." },
+    { "question": "What margins can I expect?", "answer": "Depending on your pricing tier, retailers typically achieve 40-60% margins on Eagle Glass products. Our volume pricing is designed to reward growth — the more you order, the better your margins. Many partners report 30%+ improvements after switching from generic brands." },
+    { "question": "Which devices do you support?", "answer": "We cover 200+ models including all current iPhone (12-16 series), Samsung Galaxy (S21-S25, A series), Google Pixel, OnePlus, and Xiaomi devices. New models are added within 2 weeks of device launch, and we offer a compatibility guarantee." },
+    { "question": "Do you handle shipping and logistics?", "answer": "Yes — we ship from our European warehouse with 2-5 day delivery across the EU. Orders over €500 qualify for free shipping. We also offer dropshipping integrations for online retailers and same-day dispatch for in-stock items." },
+    { "question": "Can I get custom branding or white-label options?", "answer": "Absolutely. For orders above 500 units, we offer co-branded packaging with your store logo. For 2,000+ units, full white-label solutions are available with custom packaging design, your brand colors, and tailored marketing materials." }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "label": "Händlervorteil",
+  "heading": "Vorteile für Händler",
+  "description": "Eagle Glass wurde mit einer Mission entwickelt: Händlern einen Displayschutz zu bieten, der alles andere im Regal in Verkauf, Ausstrahlung und Leistung übertrifft.",
+  "cards": [
+    { "title": "Höhere Margen durch schnelleren Umschlag", "image": "/images/benefits/sell-premium.png" },
+    { "title": "Ein echtes Premium-Produkt, dem Ihre Kunden vertrauen", "image": "/images/benefits/sell-premium2.png" },
+    { "title": "Nie ohne Bestand — dank unseres großen Lagers", "image": "/images/benefits/full-stock.png" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "label": "Packaging",
+  "heading": "Un packaging acier iconique",
+  "description": "Notre étui en acier signature n'est pas un simple emballage — c'est un outil de vente. Les clients le prennent en main, sentent son poids et reconnaissent instantanément la qualité premium.",
+  "features": [
+    { "title": "Réutilisable", "description": "Étui en acier durable que les clients conservent et réutilisent." },
+    { "title": "Acier", "description": "Finition métal premium qui attire l'attention en rayon." },
+    { "title": "Premium", "description": "Positionnement luxe qui justifie des prix premium." }
+  ],
+  "productImage": "/images/product/packaging.svg",
+  "modelSrc": "/final.glb"
+}

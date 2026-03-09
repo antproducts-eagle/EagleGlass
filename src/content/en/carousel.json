@@ -1,0 +1,12 @@
+{
+  "label": "Results",
+  "heading": "You always win with Eagle Glass",
+  "description": "Join hundreds of retailers already boosting their accessory revenue with Eagle Glass.",
+  "ctaText": "Request pricing",
+  "slides": [
+    { "title": "See the difference on your shelf", "backgroundColor": "#f2f2f2", "textColor": "dark" },
+    { "title": "Proven performance for your accessory lineup", "backgroundColor": "#1740CE", "textColor": "light" },
+    { "title": "Stock accessories that actually move", "backgroundColor": "#FF6D13", "textColor": "dark" },
+    { "stat": "+30%", "title": "Average margin increase for our partners", "backgroundColor": "#2B2B2B", "textColor": "light" }
+  ]
+}

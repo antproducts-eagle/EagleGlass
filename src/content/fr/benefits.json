@@ -1,0 +1,10 @@
+{
+  "label": "Avantage retail",
+  "heading": "Les avantages pour les détaillants",
+  "description": "Eagle Glass a été créé avec une seule mission : offrir aux détaillants un protecteur d'écran qui surpasse tout le reste en rayon — en ventes, en image et en performance.",
+  "cards": [
+    { "title": "Des marges plus élevées avec une rotation rapide", "image": "/images/benefits/sell-premium.png" },
+    { "title": "Un produit véritablement premium en qui vos clients ont confiance", "image": "/images/benefits/sell-premium2.png" },
+    { "title": "Toujours en stock — grâce à notre inventaire profond", "image": "/images/benefits/full-stock.png" }
+  ]
+}

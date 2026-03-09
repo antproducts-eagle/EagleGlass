@@ -1,0 +1,57 @@
+---
+import AnimatedSection from "../react/AnimatedSection.tsx";
+import SectionLabel from "../ui/SectionLabel.astro";
+
+interface Props {
+  data: {
+    label: string;
+    heading: string;
+    description: string;
+    cards: { title: string; image: string }[];
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<section id="benefits" class="relative overflow-hidden" style="background-image: linear-gradient(180deg, rgb(255,255,255) 0%, rgb(232,232,232) 100%);">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 py-24 md:py-32">
+    <!-- Header -->
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 lg:mb-20">
+      <div>
+        <AnimatedSection client:visible>
+          <SectionLabel text={data.label} />
+        </AnimatedSection>
+        <AnimatedSection client:visible delay={0.1}>
+          <h2 class="mt-3 pb-2 font-display font-semibold text-3xl md:text-5xl lg:text-[67px] leading-[0.9em] tracking-[-0.04em] gradient-text max-w-[670px]" style="background-image: linear-gradient(-45deg, rgb(0,0,0) 69%, rgb(153,153,153) 102%);">
+            {data.heading}
+          </h2>
+        </AnimatedSection>
+      </div>
+      <AnimatedSection client:visible delay={0.2}>
+        <p class="mt-6 lg:mt-0 text-lg md:text-xl lg:text-[27px] leading-[1.15] tracking-tighter font-medium text-black max-w-[630px]">
+          {data.description}
+        </p>
+      </AnimatedSection>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-9">
+      {data.cards.map((card, i) => (
+        <AnimatedSection client:visible delay={i * 0.1}>
+          <div class="group relative rounded-[32px] lg:rounded-[46px] overflow-hidden h-[300px] md:h-[360px] lg:h-[420px] border border-[#ded9ff] bg-[#f1f1f1] transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <img
+              src={card.image}
+              alt={card.title}
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 rounded-[inherit] pointer-events-none" style="box-shadow: inset 0px -19px 81px 0px rgba(0,0,0,0.1);"></div>
+          </div>
+          <p class="mt-4 font-display font-medium text-xl md:text-2xl lg:text-[39px] leading-[1.15] tracking-tighter">
+            {card.title}
+          </p>
+        </AnimatedSection>
+      ))}
+    </div>
+  </div>
+</section>

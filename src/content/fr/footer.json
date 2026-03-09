@@ -1,0 +1,13 @@
+{
+  "links": [
+    { "label": "Produits", "href": "#products" },
+    { "label": "Technologie", "href": "#technology" },
+    { "label": "Avantages", "href": "#benefits" },
+    { "label": "FAQ", "href": "#faq" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "copyright": "© 2025 Eagle Glass. Tous droits réservés.",
+  "legal": [
+    { "label": "Politique de confidentialité", "href": "/privacy" }
+  ]
+}

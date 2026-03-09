@@ -1,0 +1,9 @@
+{
+  "links": [
+    { "label": "Producten", "href": "#products" },
+    { "label": "Technologie", "href": "#technology" },
+    { "label": "Voordelen", "href": "#benefits" },
+    { "label": "FAQ", "href": "#faq" }
+  ],
+  "ctaText": "Prijzen aanvragen"
+}

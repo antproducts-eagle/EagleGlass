@@ -1,0 +1,23 @@
+{
+  "label": "Technologie",
+  "heading": "6-laags versterkt glas",
+  "description": "Elke Eagle Glass protector is ontworpen met zes precisielagen die samenwerken voor ongeëvenaarde helderheid, sterkte en levensduur.",
+  "layers": [
+    { "id": "anti-fingerprint", "name": "Anti-vingerafdruk coating", "description": "Geavanceerde oleofobe coating stoot oliën en vlekken af voor een schoon scherm de hele dag.", "position": { "top": "12%", "left": "25%" } },
+    { "id": "tempered-glass", "name": "9H gehard glas", "description": "Militaire 9H hardheid is bestand tegen krassen van sleutels, munten en dagelijks gebruik.", "position": { "top": "35%", "left": "55%" } },
+    { "id": "shatter-proof", "name": "Splintervrije film", "description": "Geïntegreerde veiligheidsfilm houdt glasfragmenten samen bij impact — geen scherpe randen.", "position": { "top": "58%", "left": "30%" } },
+    { "id": "adhesive", "name": "Siliconen hechtlaag", "description": "Blaasvrije precisie-hechtlaag die perfect uitlijnt bij eerste poging en schoon verwijdert.", "position": { "top": "78%", "left": "50%" } }
+  ],
+  "specs": [
+    { "value": "9H", "label": "Hardheid" },
+    { "value": "0.3", "unit": "mm", "label": "Dikte" },
+    { "value": "99.9", "unit": "%", "label": "Transparantie" },
+    { "value": "6", "label": "Lagen" }
+  ],
+  "bulletPoints": [
+    "Direct premium uitstraling in het schap",
+    "Kristalhelder met 99,9% transparantie",
+    "Moeiteloze blaasvrije installatie"
+  ],
+  "layersImage": "/images/glass-layers/layers-phone.png"
+}

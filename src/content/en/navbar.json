@@ -1,0 +1,9 @@
+{
+  "links": [
+    { "label": "Products", "href": "#products" },
+    { "label": "Technology", "href": "#technology" },
+    { "label": "Benefits", "href": "#benefits" },
+    { "label": "FAQ", "href": "#faq" }
+  ],
+  "ctaText": "Request pricing"
+}

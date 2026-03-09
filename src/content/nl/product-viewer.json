@@ -1,0 +1,12 @@
+{
+  "label": "Verpakking",
+  "heading": "Iconische stalen verpakking",
+  "description": "Onze kenmerkende stalen case is meer dan verpakking — het is een verkooptool. Klanten pakken het op, voelen het gewicht en herkennen direct premium kwaliteit.",
+  "features": [
+    { "title": "Herbruikbaar", "description": "Duurzame stalen case die klanten bewaren en hergebruiken." },
+    { "title": "Staal", "description": "Premium metalen afwerking die opvalt in het schap." },
+    { "title": "Premium", "description": "Luxe positionering die premium prijspunten rechtvaardigt." }
+  ],
+  "productImage": "/images/product/packaging.svg",
+  "modelSrc": "/final.glb"
+}

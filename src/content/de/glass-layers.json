@@ -1,0 +1,23 @@
+{
+  "label": "Technologie",
+  "heading": "6-Schicht verstärktes Glas",
+  "description": "Jeder Eagle Glass Protektor wird mit sechs Präzisionsschichten gefertigt, die zusammenwirken für unübertroffene Klarheit, Stärke und Langlebigkeit.",
+  "layers": [
+    { "id": "anti-fingerprint", "name": "Anti-Fingerabdruck-Beschichtung", "description": "Fortschrittliche oleophobe Beschichtung weist Öle und Flecken ab für ein makelloses Display den ganzen Tag.", "position": { "top": "12%", "left": "25%" } },
+    { "id": "tempered-glass", "name": "9H gehärtetes Glas", "description": "Militärgrade 9H-Härte widersteht Kratzern durch Schlüssel, Münzen und alltägliche Einwirkungen.", "position": { "top": "35%", "left": "55%" } },
+    { "id": "shatter-proof", "name": "Splitterschutzfolie", "description": "Integrierte Sicherheitsfolie hält Glasfragmente bei Aufprall zusammen — keine scharfen Kanten, kein Risiko.", "position": { "top": "58%", "left": "30%" } },
+    { "id": "adhesive", "name": "Silikonklebeschicht", "description": "Blasenfreier Präzisionskleber richtet sich beim ersten Versuch perfekt aus und lässt sich rückstandsfrei entfernen.", "position": { "top": "78%", "left": "50%" } }
+  ],
+  "specs": [
+    { "value": "9H", "label": "Härte" },
+    { "value": "0.3", "unit": "mm", "label": "Dicke" },
+    { "value": "99.9", "unit": "%", "label": "Transparenz" },
+    { "value": "6", "label": "Schichten" }
+  ],
+  "bulletPoints": [
+    "Sofortige Premium-Wahrnehmung im Regal",
+    "Kristallklare 99,9% Transparenz",
+    "Mühelose blasenfreie Installation"
+  ],
+  "layersImage": "/images/glass-layers/layers-phone.png"
+}

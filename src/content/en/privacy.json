@@ -1,0 +1,38 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "March 1, 2025",
+  "sections": [
+    {
+      "heading": "Introduction",
+      "content": "Eagle Glass B.V. (\"we\", \"us\", \"our\") respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you visit our website or engage with our services."
+    },
+    {
+      "heading": "Information We Collect",
+      "content": "We may collect the following types of personal data: contact information (name, email address, phone number, business address) provided through our pricing request forms; business information such as company name, store locations, and order history; technical data including IP address, browser type, and device information collected automatically when you visit our website; and usage data about how you interact with our website."
+    },
+    {
+      "heading": "How We Use Your Information",
+      "content": "We use your personal data to: process and respond to pricing inquiries and orders; communicate with you about products, promotions, and updates; improve our website and services; comply with legal obligations; and protect against fraudulent or unauthorized activity."
+    },
+    {
+      "heading": "Data Sharing",
+      "content": "We do not sell your personal data. We may share your information with: trusted service providers who assist in operating our business (shipping, payment processing); legal authorities when required by law; and business partners only with your explicit consent."
+    },
+    {
+      "heading": "Cookies",
+      "content": "Our website uses essential cookies to ensure proper functionality. We may also use analytics cookies to understand how visitors interact with our site. You can manage cookie preferences through your browser settings."
+    },
+    {
+      "heading": "Data Retention",
+      "content": "We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy, or as required by law. Business customer data is typically retained for the duration of the business relationship plus 7 years for legal compliance."
+    },
+    {
+      "heading": "Your Rights",
+      "content": "Under the GDPR, you have the right to: access your personal data; correct inaccurate data; request deletion of your data; restrict or object to processing; data portability; and withdraw consent at any time. To exercise these rights, contact us at privacy@eagleglass.eu."
+    },
+    {
+      "heading": "Contact",
+      "content": "For questions about this privacy policy or our data practices, please contact our Data Protection Officer at privacy@eagleglass.eu or write to: Eagle Glass B.V., Amsterdam, The Netherlands."
+    }
+  ]
+}

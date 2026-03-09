@@ -1,0 +1,295 @@
+media:
+  - name: images
+    label: Images
+    input: public/images
+    output: /images
+
+content:
+  - name: hero
+    label: Hero Section
+    type: file
+    path: src/content/hero.json
+    fields:
+      - name: headline
+        label: Headline
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: ctaText
+        label: CTA Button Text
+        type: string
+      - name: rating
+        label: Rating Score
+        type: string
+      - name: ratingText
+        label: Rating Label
+        type: string
+      - name: tags
+        label: Feature Tags
+        type: string
+        list: true
+      - name: productImage
+        label: Product Image
+        type: image
+
+  - name: about
+    label: About Section
+    type: file
+    path: src/content/about.json
+    fields:
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+
+  - name: product-viewer
+    label: Product Viewer Section
+    type: file
+    path: src/content/product-viewer.json
+    fields:
+      - name: label
+        label: Section Label
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: features
+        label: Features
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text
+      - name: productImage
+        label: Product Image
+        type: image
+
+  - name: benefits
+    label: Benefits Section
+    type: file
+    path: src/content/benefits.json
+    fields:
+      - name: label
+        label: Section Label
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: cards
+        label: Benefit Cards
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Card Title
+            type: string
+          - name: image
+            label: Card Image
+            type: image
+
+  - name: glass-layers
+    label: Glass Layers Section
+    type: file
+    path: src/content/glass-layers.json
+    fields:
+      - name: label
+        label: Section Label
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: layers
+        label: Glass Layers
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: Layer ID
+            type: string
+          - name: name
+            label: Layer Name
+            type: string
+          - name: description
+            label: Layer Description
+            type: text
+      - name: specs
+        label: Specifications
+        type: object
+        list: true
+        fields:
+          - name: value
+            label: Value
+            type: string
+          - name: unit
+            label: Unit
+            type: string
+          - name: label
+            label: Label
+            type: string
+      - name: bulletPoints
+        label: Bullet Points
+        type: string
+        list: true
+      - name: layersImage
+        label: Layers Image
+        type: image
+
+  - name: variations
+    label: Variations Section
+    type: file
+    path: src/content/variations.json
+    fields:
+      - name: label
+        label: Section Label
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: products
+        label: Products
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Product Name
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: image
+            label: Product Image
+            type: image
+
+  - name: carousel
+    label: Carousel Section
+    type: file
+    path: src/content/carousel.json
+    fields:
+      - name: label
+        label: Section Label
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: ctaText
+        label: CTA Button Text
+        type: string
+      - name: slides
+        label: Carousel Slides
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Slide Title
+            type: string
+          - name: stat
+            label: Statistic (optional)
+            type: string
+          - name: backgroundColor
+            label: Background Color
+            type: string
+          - name: textColor
+            label: Text Color (dark/light)
+            type: string
+
+  - name: cta
+    label: CTA Section
+    type: file
+    path: src/content/cta.json
+    fields:
+      - name: label
+        label: Section Label
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: ctaText
+        label: CTA Button Text
+        type: string
+      - name: image
+        label: Product Image
+        type: image
+
+  - name: faq
+    label: FAQ Section
+    type: file
+    path: src/content/faq.json
+    fields:
+      - name: label
+        label: Section Label
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: items
+        label: FAQ Items
+        type: object
+        list: true
+        fields:
+          - name: question
+            label: Question
+            type: string
+          - name: answer
+            label: Answer
+            type: text
+
+  - name: footer
+    label: Footer
+    type: file
+    path: src/content/footer.json
+    fields:
+      - name: links
+        label: Navigation Links
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Link Text
+            type: string
+          - name: href
+            label: URL
+            type: string
+      - name: copyright
+        label: Copyright Text
+        type: string
+      - name: legal
+        label: Legal Links
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Link Text
+            type: string
+          - name: href
+            label: URL
+            type: string

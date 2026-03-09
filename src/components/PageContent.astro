@@ -1,0 +1,52 @@
+---
+import HeroSection from "./sections/HeroSection.astro";
+import AboutSection from "./sections/AboutSection.astro";
+import ProductViewerSection from "./sections/ProductViewerSection.astro";
+import BenefitsSection from "./sections/BenefitsSection.astro";
+import GlassLayersSection from "./sections/GlassLayersSection.astro";
+import VariationsSection from "./sections/VariationsSection.astro";
+import CarouselSection from "./sections/CarouselSection.astro";
+import CtaSection from "./sections/CtaSection.astro";
+import FaqSection from "./sections/FaqSection.astro";
+import FooterSection from "./sections/FooterSection.astro";
+import PopupModal from "./react/PopupModal.tsx";
+import Navbar from "./react/Navbar.tsx";
+import { localeLabels, getLocalePath, type Locale } from "../i18n/config";
+import { getContent } from "../i18n/content";
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const content = getContent(lang);
+
+const localeOptions = (['en', 'nl', 'fr', 'de'] as const).map((code) => ({
+  code,
+  label: localeLabels[code],
+  path: getLocalePath(code),
+}));
+---
+
+<Navbar
+  client:load
+  links={content.navbar.links}
+  ctaText={content.navbar.ctaText}
+  currentLocale={lang}
+  locales={localeOptions}
+/>
+
+<main class="pt-16 lg:pt-20">
+  <HeroSection data={content.hero} />
+  <AboutSection data={content.about} />
+  <ProductViewerSection data={content.productViewer} />
+  <BenefitsSection data={content.benefits} />
+  <GlassLayersSection data={content.glassLayers} />
+  <VariationsSection data={content.variations} />
+  <CarouselSection data={content.carousel} />
+  <CtaSection data={content.cta} />
+  <FaqSection data={content.faq} />
+  <FooterSection data={content.footer} />
+</main>
+
+<PopupModal client:load />

@@ -1,0 +1,12 @@
+{
+  "label": "Verpackung",
+  "heading": "Ikonische Stahlverpackung",
+  "description": "Unser Signature-Stahletui ist mehr als nur Verpackung — es ist ein Verkaufsinstrument. Kunden nehmen es in die Hand, spüren das Gewicht und erkennen sofort Premium-Qualität.",
+  "features": [
+    { "title": "Wiederverwendbar", "description": "Nachhaltiges Stahletui, das Kunden aufbewahren und weiterverwenden." },
+    { "title": "Stahl", "description": "Premium-Metallfinish, das im Regal sofort auffällt." },
+    { "title": "Premium", "description": "Luxus-Positionierung, die Premium-Preise rechtfertigt." }
+  ],
+  "productImage": "/images/product/packaging.svg",
+  "modelSrc": "/final.glb"
+}

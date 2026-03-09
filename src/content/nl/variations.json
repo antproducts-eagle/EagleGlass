@@ -1,0 +1,9 @@
+{
+  "label": "Productlijn",
+  "heading": "Twee glasvarianten",
+  "description": "Of je klanten nu kristalheldere bescherming of totale privacy willen, Eagle Glass levert — met dezelfde premium kwaliteit in elke protector.",
+  "products": [
+    { "name": "Premium Glass", "description": "Kristalhelder 9H gehard glas met anti-vingerafdruk coating voor vlekkeloze dagelijkse bescherming.", "image": "/images/variations/left.png" },
+    { "name": "Privacy Glass", "description": "Geavanceerd privacyfilter blokkeert zijwaarts meekijken en behoudt volledige helderheid van voren.", "image": "/images/variations/right.png" }
+  ]
+}

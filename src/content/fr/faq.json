@@ -1,0 +1,14 @@
+{
+  "label": "FAQ",
+  "heading": "Questions fréquentes",
+  "description": "Tout ce que vous devez savoir pour devenir partenaire Eagle Glass.",
+  "items": [
+    { "question": "Qu'est-ce qui distingue Eagle Glass des autres protecteurs d'écran ?", "answer": "Eagle Glass intègre un verre renforcé 6 couches breveté avec une dureté 9H, un revêtement anti-traces et une technologie anti-éclats — le tout dans un étui en acier réutilisable qui crée instantanément une image premium en rayon. Contrairement aux protecteurs génériques, Eagle Glass est conçu pour se vendre tout seul." },
+    { "question": "Quelles sont les quantités minimales de commande ?", "answer": "Nous proposons des paliers flexibles à partir de 50 unités seulement, parfait pour tester dans un seul point de vente. Pour les chaînes multi-magasins, nous offrons des packages volume sur mesure avec un support dédié et une livraison prioritaire." },
+    { "question": "Quel est l'impact du packaging acier sur les ventes ?", "answer": "Nos partenaires retail rapportent systématiquement une rotation 2-3x plus rapide par rapport aux concurrents en packaging plastique. L'étui en acier crée une expérience tactile premium — les clients le prennent en main, ressentent la qualité et achètent. Il sert aussi d'étui de rangement réutilisable, ajoutant une vraie valeur perçue." },
+    { "question": "Quelles marges puis-je espérer ?", "answer": "Selon votre palier tarifaire, les détaillants réalisent typiquement 40-60% de marge sur les produits Eagle Glass. Notre grille de prix volume est conçue pour récompenser la croissance — plus vous commandez, meilleures sont vos marges. De nombreux partenaires constatent une amélioration de 30%+ après avoir quitté les marques génériques." },
+    { "question": "Quels appareils couvrez-vous ?", "answer": "Nous couvrons plus de 200 modèles incluant tous les iPhone actuels (séries 12-16), Samsung Galaxy (S21-S25, série A), Google Pixel, OnePlus et Xiaomi. Les nouveaux modèles sont ajoutés dans les 2 semaines suivant le lancement, et nous offrons une garantie de compatibilité." },
+    { "question": "Gérez-vous l'expédition et la logistique ?", "answer": "Oui — nous expédions depuis notre entrepôt européen avec une livraison en 2-5 jours dans toute l'UE. Les commandes de plus de 500€ bénéficient de la livraison gratuite. Nous proposons aussi des intégrations dropshipping pour les retailers en ligne et l'expédition le jour même pour les articles en stock." },
+    { "question": "Proposez-vous du branding personnalisé ou du white-label ?", "answer": "Absolument. Pour les commandes de plus de 500 unités, nous proposons un packaging co-brandé avec votre logo. À partir de 2 000 unités, des solutions white-label complètes sont disponibles avec un design de packaging sur mesure, vos couleurs de marque et des supports marketing personnalisés." }
+  ]
+}
