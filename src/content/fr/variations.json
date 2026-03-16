@@ -1,7 +1,7 @@
 {
   "label": "Gamme",
   "heading": "Deux variantes de verre",
-  "description": "Que vos clients recherchent une clarté cristalline ou une confidentialité totale, Eagle Glass répond présent — avec la même qualité premium dans chaque protecteur.",
+  "description": "Que vos clients recherchent une clarté cristalline ou une confidentialité totale, Eagle Glass répond présent - avec la même qualité premium dans chaque protecteur.",
   "products": [
     { "name": "Premium Glass", "description": "Verre trempé 9H ultra-clair avec revêtement anti-traces pour une protection quotidienne impeccable.", "image": "/images/variations/left.png" },
     { "name": "Privacy Glass", "description": "Filtre de confidentialité avancé qui bloque la vision latérale tout en maintenant une clarté totale de face.", "image": "/images/variations/right.png" }

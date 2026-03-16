@@ -1,18 +1,17 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-interface Slide {
+interface Card {
   title: string;
-  stat?: string;
-  backgroundColor: string;
-  textColor: "dark" | "light";
+  description?: string;
+  image: string;
 }
 
 interface Props {
-  slides: Slide[];
+  cards: Card[];
 }
 
-export default function CarouselSlider({ slides }: Props) {
+export default function BenefitsCarousel({ cards }: Props) {
   const [active, setActive] = useState(0);
   const [direction, setDirection] = useState(1);
   const [paused, setPaused] = useState(false);
@@ -20,9 +19,9 @@ export default function CarouselSlider({ slides }: Props) {
   const go = useCallback(
     (dir: 1 | -1) => {
       setDirection(dir);
-      setActive((prev) => (prev + dir + slides.length) % slides.length);
+      setActive((prev) => (prev + dir + cards.length) % cards.length);
     },
-    [slides.length],
+    [cards.length],
   );
 
   useEffect(() => {
@@ -32,21 +31,19 @@ export default function CarouselSlider({ slides }: Props) {
   }, [paused, go]);
 
   const variants = {
-    enter: (d: number) => ({ y: d > 0 ? 40 : -40, opacity: 0 }),
-    center: { y: 0, opacity: 1 },
-    exit: (d: number) => ({ y: d > 0 ? -40 : 40, opacity: 0 }),
+    enter: (d: number) => ({ x: d > 0 ? 80 : -80, opacity: 0 }),
+    center: { x: 0, opacity: 1 },
+    exit: (d: number) => ({ x: d > 0 ? -80 : 80, opacity: 0 }),
   };
-
-  const slide = slides[active];
-  const color = slide.textColor === "light" ? "#fff" : "#121212";
 
   return (
     <div
+      className="relative"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
       {/* Card */}
-      <div className="relative overflow-hidden rounded-[28px] lg:rounded-[40px] aspect-[3/4] md:aspect-[4/5]">
+      <div className="relative overflow-hidden rounded-[32px] lg:rounded-[40px] bg-[#f1f1f1] border border-black/5 aspect-[4/3]">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={active}
@@ -55,34 +52,37 @@ export default function CarouselSlider({ slides }: Props) {
             initial="enter"
             animate="center"
             exit="exit"
-            transition={{ type: "spring", damping: 28, stiffness: 300 }}
-            className="absolute inset-0 flex flex-col justify-end p-6 lg:p-10"
-            style={{ backgroundColor: slide.backgroundColor, color }}
+            transition={{ type: "spring", damping: 30, stiffness: 300 }}
+            className="absolute inset-0"
           >
-            {/* Inner shadow */}
-            <div
-              className="absolute inset-0 rounded-[inherit] pointer-events-none"
-              style={{ boxShadow: "inset 0px -14px 60px 0px rgba(0,0,0,0.08)" }}
+            <img
+              src={cards[active].image}
+              alt={cards[active].title}
+              className="w-full h-full object-cover"
             />
-            <div className="relative z-10">
-              {slide.stat && (
-                <p className="font-display font-semibold text-6xl md:text-7xl lg:text-[100px] tracking-tighter leading-none mb-3">
-                  {slide.stat}
+            {/* Bottom gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent" />
+
+            {/* Card text overlay */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <p className="font-display font-semibold text-xl md:text-2xl lg:text-[28px] leading-tight tracking-tight text-white">
+                {cards[active].title}
+              </p>
+              {cards[active].description && (
+                <p className="mt-2 text-sm md:text-base text-white/70 leading-relaxed max-w-[400px]">
+                  {cards[active].description}
                 </p>
               )}
-              <p className="font-display font-semibold text-xl md:text-2xl lg:text-[30px] tracking-tight leading-[1.1]">
-                {slide.title}
-              </p>
             </div>
           </motion.div>
         </AnimatePresence>
       </div>
 
       {/* Controls */}
-      <div className="mt-5 flex items-center justify-between">
+      <div className="mt-6 flex items-center justify-between">
         {/* Progress dots */}
         <div className="flex gap-2">
-          {slides.map((_, i) => (
+          {cards.map((_, i) => (
             <button
               key={i}
               onClick={() => {
@@ -109,20 +109,30 @@ export default function CarouselSlider({ slides }: Props) {
         <div className="flex gap-2">
           <button
             onClick={() => go(-1)}
-            className="w-10 h-10 rounded-full border border-black/10 bg-white flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors duration-200 cursor-pointer"
-            aria-label="Previous"
+            className="w-10 h-10 rounded-full border border-black/10 bg-white flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors duration-200"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path
+                d="M10 12L6 8L10 4"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </button>
           <button
             onClick={() => go(1)}
-            className="w-10 h-10 rounded-full border border-black/10 bg-white flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors duration-200 cursor-pointer"
-            aria-label="Next"
+            className="w-10 h-10 rounded-full border border-black/10 bg-white flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors duration-200"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path
+                d="M6 4L10 8L6 12"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </button>
         </div>

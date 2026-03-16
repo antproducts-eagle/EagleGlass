@@ -1,90 +1,64 @@
-import { useEffect, useRef } from "react";
+import { Suspense, useRef } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
+import * as THREE from "three";
 
 interface Props {
   modelSrc: string;
-  image?: string;
 }
 
-// Declare model-viewer as a valid JSX element
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      "model-viewer": React.DetailedHTMLProps<
-        React.HTMLAttributes<HTMLElement> & {
-          src?: string;
-          alt?: string;
-          "auto-rotate"?: boolean | string;
-          "auto-rotate-delay"?: string;
-          "rotation-per-second"?: string;
-          "camera-controls"?: boolean | string;
-          "touch-action"?: string;
-          "interaction-prompt"?: string;
-          "shadow-intensity"?: string;
-          "shadow-softness"?: string;
-          "camera-orbit"?: string;
-          "min-camera-orbit"?: string;
-          "max-camera-orbit"?: string;
-          "field-of-view"?: string;
-          "environment-image"?: string;
-          exposure?: string;
-          poster?: string;
-          loading?: string;
-          reveal?: string;
-        },
-        HTMLElement
-      >;
-    }
-  }
-}
+function Model({ src }: { src: string }) {
+  const { scene } = useGLTF(src);
+  const groupRef = useRef<THREE.Group>(null);
 
-export default function ProductViewer360({ modelSrc, image }: Props) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const viewerRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const viewer = viewerRef.current;
-    if (!viewer) return;
-
-    const handleLoad = () => {
-      // Force all materials to OPAQUE to fix alpha transparency issues
-      const model = (viewer as any).model;
-      if (model) {
-        for (const material of model.materials) {
-          material.setAlphaMode("OPAQUE");
-        }
+  // Force all materials to fully opaque
+  scene.traverse((child) => {
+    if ((child as THREE.Mesh).isMesh) {
+      const mesh = child as THREE.Mesh;
+      const materials = Array.isArray(mesh.material) ? mesh.material : [mesh.material];
+      for (const mat of materials) {
+        mat.transparent = false;
+        mat.opacity = 1;
+        mat.depthWrite = true;
       }
-    };
-
-    viewer.addEventListener("load", handleLoad);
-    return () => viewer.removeEventListener("load", handleLoad);
-  }, []);
+    }
+  });
 
   return (
-    <div ref={containerRef} className="relative w-full aspect-square max-w-[500px] mx-auto">
-      <model-viewer
-        ref={viewerRef as any}
-        src={modelSrc}
-        alt="Eagle Glass packaging"
-        auto-rotate=""
-        auto-rotate-delay="0"
-        rotation-per-second="30deg"
-        camera-controls=""
-        touch-action="pan-y"
-        interaction-prompt="auto"
-        shadow-intensity="0.4"
-        shadow-softness="1"
-        camera-orbit="45deg 75deg 105%"
-        min-camera-orbit="auto auto 80%"
-        max-camera-orbit="auto auto 200%"
-        field-of-view="30deg"
-        exposure="1"
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "transparent",
-          outline: "none",
-        }}
-      />
+    <group ref={groupRef} rotation={[0, -Math.PI / 2 + Math.PI * 0.1, 0]}>
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+export default function ProductViewer360({ modelSrc }: Props) {
+  return (
+    <div className="relative w-full aspect-square max-w-[500px] mx-auto">
+      <Canvas
+        camera={{ position: [0, 0, 1.5], fov: 30 }}
+        gl={{ antialias: true, alpha: true, toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 2, powerPreference: "high-performance" }}
+        style={{ background: "transparent" }}
+        frameloop="demand"
+      >
+        <ambientLight intensity={2.5} />
+        <directionalLight position={[5, 5, 5]} intensity={3} />
+        <directionalLight position={[-3, 3, -3]} intensity={1.5} />
+
+        <Suspense fallback={null}>
+          <Model src={modelSrc} />
+          <Environment preset="city" resolution={512} />
+        </Suspense>
+
+        <OrbitControls
+          enablePan={false}
+          enableZoom={true}
+          minDistance={1.5}
+          maxDistance={5}
+          minPolarAngle={Math.PI / 6}
+          maxPolarAngle={Math.PI / 2}
+          autoRotate={false}
+        />
+      </Canvas>
     </div>
   );
 }

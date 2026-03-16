@@ -3,10 +3,12 @@
   "heading": "6-layer reinforced glass",
   "description": "Every Eagle Glass protector is engineered with six precision layers that work together to deliver unmatched clarity, strength, and longevity.",
   "layers": [
-    { "id": "anti-fingerprint", "name": "Anti-fingerprint coating", "description": "Advanced oleophobic coating repels oils and smudges, keeping the screen pristine all day.", "position": { "top": "12%", "left": "25%" } },
-    { "id": "tempered-glass", "name": "9H tempered glass", "description": "Military-grade 9H hardness resists scratches from keys, coins, and everyday impacts.", "position": { "top": "35%", "left": "55%" } },
-    { "id": "shatter-proof", "name": "Shatter-proof film", "description": "Integrated safety film holds glass fragments together on impact — zero sharp edges, zero risk.", "position": { "top": "58%", "left": "30%" } },
-    { "id": "adhesive", "name": "Silicon adhesive", "description": "Bubble-free precision adhesive aligns perfectly on first try, removes cleanly without residue.", "position": { "top": "78%", "left": "50%" } }
+    { "id": "anti-fingerprint", "name": "Anti-fingerprint coating", "description": "Advanced oleophobic coating repels oils and smudges, keeping the screen pristine all day.", "position": { "top": "8%", "left": "38%" } },
+    { "id": "anti-scratch", "name": "Anti-scratch hardened layer", "description": "Ultra-hard surface layer provides first-line defense against daily scratches and micro-abrasions.", "position": { "top": "18%", "left": "58%" } },
+    { "id": "tempered-glass", "name": "9H tempered glass", "description": "Military-grade 9H hardness resists scratches from keys, coins, and everyday impacts.", "position": { "top": "32%", "left": "35%" } },
+    { "id": "shatter-proof", "name": "Shatter-proof film", "description": "Integrated safety film holds glass fragments together on impact - zero sharp edges, zero risk.", "position": { "top": "48%", "left": "62%" } },
+    { "id": "anti-static", "name": "Anti-static layer", "description": "Eliminates static charge buildup to prevent dust attraction and ensure flawless touch response.", "position": { "top": "60%", "left": "38%" } },
+    { "id": "adhesive", "name": "Silicon adhesive", "description": "Bubble-free precision adhesive aligns perfectly on first try, removes cleanly without residue.", "position": { "top": "74%", "left": "55%" } }
   ],
   "specs": [
     { "value": "9H", "label": "Hardness" },
@@ -19,5 +21,5 @@
     "Crystal-clear 99.9% transparency",
     "Effortless bubble-free installation"
   ],
-  "layersImage": "/images/glass-layers/layers-phone.png"
+  "layersImage": "/images/glass-layers/layers-final.png"
 }

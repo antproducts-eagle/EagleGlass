@@ -3,8 +3,8 @@
   "heading": "Vorteile für Händler",
   "description": "Eagle Glass wurde mit einer Mission entwickelt: Händlern einen Displayschutz zu bieten, der alles andere im Regal in Verkauf, Ausstrahlung und Leistung übertrifft.",
   "cards": [
-    { "title": "Höhere Margen durch schnelleren Umschlag", "image": "/images/benefits/sell-premium.png" },
-    { "title": "Ein echtes Premium-Produkt, dem Ihre Kunden vertrauen", "image": "/images/benefits/sell-premium2.png" },
-    { "title": "Nie ohne Bestand — dank unseres großen Lagers", "image": "/images/benefits/full-stock.png" }
+    { "title": "Höhere Margen durch schnelleren Umschlag", "description": "Premium-Positionierung steigert den Gewinn pro Einheit, während erstklassige Qualität Kunden zurückbringt.", "image": "/images/benefits/sell-premium.png" },
+    { "title": "Ein echtes Premium-Produkt, dem Ihre Kunden vertrauen", "description": "6-Schicht verstärktes Glas mit makelloser Klarheit — ein Produkt, das sich im Regal von selbst verkauft.", "image": "/images/benefits/sell-premium2.png" },
+    { "title": "Nie ohne Bestand - dank unseres großen Lagers", "description": "Zuverlässige Lieferkette und dedizierte Lagerbestände sorgen dafür, dass kein Verkauf verpasst wird.", "image": "/images/benefits/full-stock.png" }
   ]
 }

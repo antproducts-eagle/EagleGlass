@@ -1,7 +1,7 @@
 {
   "label": "Product line",
   "heading": "Two glass variations",
-  "description": "Whether your customers want crystal clarity or total privacy, Eagle Glass delivers — with the same premium quality in every protector.",
+  "description": "Whether your customers want crystal clarity or total privacy, Eagle Glass delivers - with the same premium quality in every protector.",
   "products": [
     { "name": "Premium Glass", "description": "Crystal-clear 9H tempered glass with anti-fingerprint coating for flawless daily protection.", "image": "/images/variations/left.png" },
     { "name": "Privacy Glass", "description": "Advanced privacy filter blocks side-angle viewing while maintaining full clarity head-on.", "image": "/images/variations/right.png" }

@@ -3,10 +3,12 @@
   "heading": "6-Schicht verstärktes Glas",
   "description": "Jeder Eagle Glass Protektor wird mit sechs Präzisionsschichten gefertigt, die zusammenwirken für unübertroffene Klarheit, Stärke und Langlebigkeit.",
   "layers": [
-    { "id": "anti-fingerprint", "name": "Anti-Fingerabdruck-Beschichtung", "description": "Fortschrittliche oleophobe Beschichtung weist Öle und Flecken ab für ein makelloses Display den ganzen Tag.", "position": { "top": "12%", "left": "25%" } },
-    { "id": "tempered-glass", "name": "9H gehärtetes Glas", "description": "Militärgrade 9H-Härte widersteht Kratzern durch Schlüssel, Münzen und alltägliche Einwirkungen.", "position": { "top": "35%", "left": "55%" } },
-    { "id": "shatter-proof", "name": "Splitterschutzfolie", "description": "Integrierte Sicherheitsfolie hält Glasfragmente bei Aufprall zusammen — keine scharfen Kanten, kein Risiko.", "position": { "top": "58%", "left": "30%" } },
-    { "id": "adhesive", "name": "Silikonklebeschicht", "description": "Blasenfreier Präzisionskleber richtet sich beim ersten Versuch perfekt aus und lässt sich rückstandsfrei entfernen.", "position": { "top": "78%", "left": "50%" } }
+    { "id": "anti-fingerprint", "name": "Anti-Fingerabdruck-Beschichtung", "description": "Fortschrittliche oleophobe Beschichtung weist Öle und Flecken ab für ein makelloses Display den ganzen Tag.", "position": { "top": "8%", "left": "38%" } },
+    { "id": "anti-scratch", "name": "Kratzfeste Härteschicht", "description": "Ultraharte Oberflächenschicht bietet erstklassigen Schutz gegen tägliche Kratzer und Mikroabrieb.", "position": { "top": "18%", "left": "58%" } },
+    { "id": "tempered-glass", "name": "9H gehärtetes Glas", "description": "Militärgrade 9H-Härte widersteht Kratzern durch Schlüssel, Münzen und alltägliche Einwirkungen.", "position": { "top": "32%", "left": "35%" } },
+    { "id": "shatter-proof", "name": "Splitterschutzfolie", "description": "Integrierte Sicherheitsfolie hält Glasfragmente bei Aufprall zusammen - keine scharfen Kanten, kein Risiko.", "position": { "top": "48%", "left": "62%" } },
+    { "id": "anti-static", "name": "Antistatische Schicht", "description": "Verhindert statische Aufladung, um Staubanlagerung zu vermeiden und eine einwandfreie Touchreaktion zu gewährleisten.", "position": { "top": "60%", "left": "38%" } },
+    { "id": "adhesive", "name": "Silikonklebeschicht", "description": "Blasenfreier Präzisionskleber richtet sich beim ersten Versuch perfekt aus und lässt sich rückstandsfrei entfernen.", "position": { "top": "74%", "left": "55%" } }
   ],
   "specs": [
     { "value": "9H", "label": "Härte" },
@@ -19,5 +21,5 @@
     "Kristallklare 99,9% Transparenz",
     "Mühelose blasenfreie Installation"
   ],
-  "layersImage": "/images/glass-layers/layers-phone.png"
+  "layersImage": "/images/glass-layers/layers-final.png"
 }

@@ -54,11 +54,11 @@ export default function Navbar({ links, ctaText, currentLocale, locales }: Props
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 flex-shrink-0">
-            <img src="/images/logo.svg" alt="Eagle Glass" className="h-8 lg:h-9" />
+            <img src="/images/logo.png" alt="Eagle Glass" className="h-8 lg:h-9" />
           </a>
 
           {/* Desktop nav links */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             {links.map((link) => (
               <a
                 key={link.href}

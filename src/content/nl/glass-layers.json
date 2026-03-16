@@ -3,10 +3,12 @@
   "heading": "6-laags versterkt glas",
   "description": "Elke Eagle Glass protector is ontworpen met zes precisielagen die samenwerken voor ongeëvenaarde helderheid, sterkte en levensduur.",
   "layers": [
-    { "id": "anti-fingerprint", "name": "Anti-vingerafdruk coating", "description": "Geavanceerde oleofobe coating stoot oliën en vlekken af voor een schoon scherm de hele dag.", "position": { "top": "12%", "left": "25%" } },
-    { "id": "tempered-glass", "name": "9H gehard glas", "description": "Militaire 9H hardheid is bestand tegen krassen van sleutels, munten en dagelijks gebruik.", "position": { "top": "35%", "left": "55%" } },
-    { "id": "shatter-proof", "name": "Splintervrije film", "description": "Geïntegreerde veiligheidsfilm houdt glasfragmenten samen bij impact — geen scherpe randen.", "position": { "top": "58%", "left": "30%" } },
-    { "id": "adhesive", "name": "Siliconen hechtlaag", "description": "Blaasvrije precisie-hechtlaag die perfect uitlijnt bij eerste poging en schoon verwijdert.", "position": { "top": "78%", "left": "50%" } }
+    { "id": "anti-fingerprint", "name": "Anti-vingerafdruk coating", "description": "Geavanceerde oleofobe coating stoot oliën en vlekken af voor een schoon scherm de hele dag.", "position": { "top": "8%", "left": "38%" } },
+    { "id": "anti-scratch", "name": "Krasbestendige geharde laag", "description": "Ultraharde oppervlaktelaag biedt eerstelijns bescherming tegen dagelijkse krassen en micro-slijtage.", "position": { "top": "18%", "left": "58%" } },
+    { "id": "tempered-glass", "name": "9H gehard glas", "description": "Militaire 9H hardheid is bestand tegen krassen van sleutels, munten en dagelijks gebruik.", "position": { "top": "32%", "left": "35%" } },
+    { "id": "shatter-proof", "name": "Splintervrije film", "description": "Geïntegreerde veiligheidsfilm houdt glasfragmenten samen bij impact - geen scherpe randen.", "position": { "top": "48%", "left": "62%" } },
+    { "id": "anti-static", "name": "Antistatische laag", "description": "Elimineert statische opbouw om stofaantrekking te voorkomen en een feilloze aanraakrespons te garanderen.", "position": { "top": "60%", "left": "38%" } },
+    { "id": "adhesive", "name": "Siliconen hechtlaag", "description": "Blaasvrije precisie-hechtlaag die perfect uitlijnt bij eerste poging en schoon verwijdert.", "position": { "top": "74%", "left": "55%" } }
   ],
   "specs": [
     { "value": "9H", "label": "Hardheid" },
@@ -19,5 +21,5 @@
     "Kristalhelder met 99,9% transparantie",
     "Moeiteloze blaasvrije installatie"
   ],
-  "layersImage": "/images/glass-layers/layers-phone.png"
+  "layersImage": "/images/glass-layers/layers-final.png"
 }

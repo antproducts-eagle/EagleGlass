@@ -3,10 +3,12 @@
   "heading": "Verre renforcé 6 couches",
   "description": "Chaque protecteur Eagle Glass est conçu avec six couches de précision qui travaillent ensemble pour offrir une clarté, une résistance et une longévité inégalées.",
   "layers": [
-    { "id": "anti-fingerprint", "name": "Revêtement anti-traces", "description": "Revêtement oléophobe avancé qui repousse les huiles et traces pour un écran impeccable toute la journée.", "position": { "top": "12%", "left": "25%" } },
-    { "id": "tempered-glass", "name": "Verre trempé 9H", "description": "Dureté 9H de grade militaire résistant aux rayures de clés, pièces et impacts quotidiens.", "position": { "top": "35%", "left": "55%" } },
-    { "id": "shatter-proof", "name": "Film anti-éclats", "description": "Film de sécurité intégré qui maintient les fragments en cas d'impact — zéro bord tranchant, zéro risque.", "position": { "top": "58%", "left": "30%" } },
-    { "id": "adhesive", "name": "Adhésif silicone", "description": "Adhésif de précision sans bulles qui s'aligne parfaitement du premier coup et se retire proprement.", "position": { "top": "78%", "left": "50%" } }
+    { "id": "anti-fingerprint", "name": "Revêtement anti-traces", "description": "Revêtement oléophobe avancé qui repousse les huiles et traces pour un écran impeccable toute la journée.", "position": { "top": "8%", "left": "38%" } },
+    { "id": "anti-scratch", "name": "Couche durcie anti-rayures", "description": "Couche de surface ultra-dure offrant une protection de première ligne contre les rayures et micro-abrasions quotidiennes.", "position": { "top": "18%", "left": "58%" } },
+    { "id": "tempered-glass", "name": "Verre trempé 9H", "description": "Dureté 9H de grade militaire résistant aux rayures de clés, pièces et impacts quotidiens.", "position": { "top": "32%", "left": "35%" } },
+    { "id": "shatter-proof", "name": "Film anti-éclats", "description": "Film de sécurité intégré qui maintient les fragments en cas d'impact - zéro bord tranchant, zéro risque.", "position": { "top": "48%", "left": "62%" } },
+    { "id": "anti-static", "name": "Couche antistatique", "description": "Élimine l'accumulation de charge statique pour éviter l'attraction de poussière et assurer une réponse tactile parfaite.", "position": { "top": "60%", "left": "38%" } },
+    { "id": "adhesive", "name": "Adhésif silicone", "description": "Adhésif de précision sans bulles qui s'aligne parfaitement du premier coup et se retire proprement.", "position": { "top": "74%", "left": "55%" } }
   ],
   "specs": [
     { "value": "9H", "label": "Dureté" },
@@ -19,5 +21,5 @@
     "Clarté cristalline à 99,9% de transparence",
     "Installation sans bulles et sans effort"
   ],
-  "layersImage": "/images/glass-layers/layers-phone.png"
+  "layersImage": "/images/glass-layers/layers-final.png"
 }

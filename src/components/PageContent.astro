@@ -4,6 +4,7 @@ import AboutSection from "./sections/AboutSection.astro";
 import ProductViewerSection from "./sections/ProductViewerSection.astro";
 import BenefitsSection from "./sections/BenefitsSection.astro";
 import GlassLayersSection from "./sections/GlassLayersSection.astro";
+import InsideBoxSection from "./sections/InsideBoxSection.astro";
 import VariationsSection from "./sections/VariationsSection.astro";
 import CarouselSection from "./sections/CarouselSection.astro";
 import CtaSection from "./sections/CtaSection.astro";
@@ -42,6 +43,7 @@ const localeOptions = (['en', 'nl', 'fr', 'de'] as const).map((code) => ({
   <ProductViewerSection data={content.productViewer} />
   <BenefitsSection data={content.benefits} />
   <GlassLayersSection data={content.glassLayers} />
+  <InsideBoxSection data={content.insideBox} />
   <VariationsSection data={content.variations} />
   <CarouselSection data={content.carousel} />
   <CtaSection data={content.cta} />
