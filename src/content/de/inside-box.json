@@ -2,5 +2,26 @@
   "label": "Lieferumfang",
   "heading": "In der Verpackung",
   "description": "Jedes Eagle Glass Set enthält alles für eine perfekte Installation — nichts extra zu kaufen.",
-  "image": "/images/inside.png"
+  "cards": [
+    {
+      "title": "Displayschutz",
+      "description": "Premium-Hartglas mit oleophober Beschichtung",
+      "image": "/images/packaging/protector.png"
+    },
+    {
+      "title": "Installationsrahmen",
+      "description": "Präzisions-Ausrichtungswerkzeug für perfekte Platzierung",
+      "image": "/images/packaging/frame.png"
+    },
+    {
+      "title": "Installationsanleitung",
+      "description": "Schritt-für-Schritt-Anleitung für einfache Einrichtung",
+      "image": "/images/packaging/guide.png"
+    },
+    {
+      "title": "Installationswerkzeug",
+      "description": "Reinigungstücher, Staubentferner & Mikrofasertuch",
+      "image": "/images/packaging/tools.png"
+    }
+  ]
 }

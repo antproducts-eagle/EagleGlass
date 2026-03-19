@@ -2,5 +2,26 @@
   "label": "What's included",
   "heading": "Inside the box",
   "description": "Every Eagle Glass kit comes with everything needed for a flawless installation — nothing extra to buy.",
-  "image": "/images/inside.png"
+  "cards": [
+    {
+      "title": "Screen Protector",
+      "description": "Premium tempered glass with oleophobic coating",
+      "image": "/images/packaging/protector.png"
+    },
+    {
+      "title": "Installation Frame",
+      "description": "Precision alignment tool for perfect placement",
+      "image": "/images/packaging/frame.png"
+    },
+    {
+      "title": "Installation Guide",
+      "description": "Step-by-step instructions for easy setup",
+      "image": "/images/packaging/guide.png"
+    },
+    {
+      "title": "Installation Tools",
+      "description": "Cleaning wipes, dust remover & microfiber cloth",
+      "image": "/images/packaging/tools.png"
+    }
+  ]
 }

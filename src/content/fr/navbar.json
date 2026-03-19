@@ -1,8 +1,8 @@
 {
   "links": [
     { "label": "Produits", "href": "#products" },
-    { "label": "Technologie", "href": "#technology" },
     { "label": "Avantages", "href": "#benefits" },
+    { "label": "Technologie", "href": "#technology" },
     { "label": "FAQ", "href": "#faq" }
   ],
   "ctaText": "Demander un devis"

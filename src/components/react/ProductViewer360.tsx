@@ -38,7 +38,7 @@ export default function ProductViewer360({ modelSrc }: Props) {
         camera={{ position: [0, 0, 1.5], fov: 30 }}
         gl={{ antialias: true, alpha: true, toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 2, powerPreference: "high-performance" }}
         style={{ background: "transparent" }}
-        frameloop="demand"
+        frameloop="always"
       >
         <ambientLight intensity={2.5} />
         <directionalLight position={[5, 5, 5]} intensity={3} />
@@ -56,7 +56,8 @@ export default function ProductViewer360({ modelSrc }: Props) {
           maxDistance={5}
           minPolarAngle={Math.PI / 6}
           maxPolarAngle={Math.PI / 2}
-          autoRotate={false}
+          autoRotate={true}
+          autoRotateSpeed={1.5}
         />
       </Canvas>
     </div>

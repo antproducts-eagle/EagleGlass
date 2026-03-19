@@ -2,5 +2,26 @@
   "label": "Inhoud",
   "heading": "In de doos",
   "description": "Elke Eagle Glass kit bevat alles voor een perfecte installatie — niets extra nodig.",
-  "image": "/images/inside.png"
+  "cards": [
+    {
+      "title": "Screenprotector",
+      "description": "Premium gehard glas met oleofobe coating",
+      "image": "/images/packaging/protector.png"
+    },
+    {
+      "title": "Installatieframe",
+      "description": "Precisie-uitlijningstool voor perfecte plaatsing",
+      "image": "/images/packaging/frame.png"
+    },
+    {
+      "title": "Installatiehandleiding",
+      "description": "Stapsgewijze instructies voor eenvoudige installatie",
+      "image": "/images/packaging/guide.png"
+    },
+    {
+      "title": "Installatiegereedschap",
+      "description": "Reinigingsdoekjes, stofverwijderaar & microvezeldoek",
+      "image": "/images/packaging/tools.png"
+    }
+  ]
 }

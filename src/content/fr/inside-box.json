@@ -2,5 +2,26 @@
   "label": "Contenu",
   "heading": "Dans la boîte",
   "description": "Chaque kit Eagle Glass contient tout le nécessaire pour une installation parfaite — rien d'autre à acheter.",
-  "image": "/images/inside.png"
+  "cards": [
+    {
+      "title": "Protection d'écran",
+      "description": "Verre trempé premium avec revêtement oléophobe",
+      "image": "/images/packaging/protector.png"
+    },
+    {
+      "title": "Cadre d'installation",
+      "description": "Outil d'alignement de précision pour un placement parfait",
+      "image": "/images/packaging/frame.png"
+    },
+    {
+      "title": "Guide d'installation",
+      "description": "Instructions étape par étape pour une mise en place facile",
+      "image": "/images/packaging/guide.png"
+    },
+    {
+      "title": "Outils d'installation",
+      "description": "Lingettes nettoyantes, anti-poussière & chiffon microfibre",
+      "image": "/images/packaging/tools.png"
+    }
+  ]
 }

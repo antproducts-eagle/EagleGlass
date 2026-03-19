@@ -17,12 +17,12 @@ interface Props {
 const { data } = Astro.props;
 ---
 
-<section id="products" class="relative bg-white overflow-hidden">
+<section id="products" class="relative bg-white overflow-x-hidden">
   <div class="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 py-24 md:py-32">
     <div class="flex flex-col lg:flex-row lg:items-center lg:gap-20">
       <!-- 3D Viewer -->
       <div class="flex-1 mb-12 lg:mb-0">
-        <ProductViewer360 client:visible modelSrc={data.modelSrc || ""} />
+        <ProductViewer360 client:load modelSrc={data.modelSrc || ""} />
       </div>
 
       <!-- Text content -->
@@ -32,7 +32,7 @@ const { data } = Astro.props;
         </AnimatedSection>
 
         <AnimatedSection client:visible delay={0.1}>
-          <h2 class="mt-3 pb-2 font-display font-semibold text-3xl md:text-5xl lg:text-[67px] leading-[0.9em] tracking-[-0.04em] gradient-text" style="background-image: linear-gradient(-69deg, rgb(22,22,22) 69%, rgb(153,153,153) 102%);">
+          <h2 class="mt-3 pb-2 font-display font-semibold text-3xl md:text-5xl lg:text-[67px] leading-[1em] tracking-[-0.04em] gradient-text" style="background-image: linear-gradient(-69deg, rgb(22,22,22) 69%, rgb(153,153,153) 102%);">
             {data.heading}
           </h2>
         </AnimatedSection>

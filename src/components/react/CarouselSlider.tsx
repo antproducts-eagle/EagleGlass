@@ -42,11 +42,12 @@ export default function CarouselSlider({ slides }: Props) {
 
   return (
     <div
+      className="flex flex-col flex-1"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
       {/* Card */}
-      <div className="relative overflow-hidden rounded-[28px] lg:rounded-[40px] aspect-[3/4] md:aspect-[4/5]">
+      <div className="relative overflow-hidden rounded-[28px] lg:rounded-[40px] flex-1 min-h-[400px]">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={active}
@@ -66,11 +67,11 @@ export default function CarouselSlider({ slides }: Props) {
             />
             <div className="relative z-10">
               {slide.stat && (
-                <p className="font-display font-semibold text-6xl md:text-7xl lg:text-[100px] tracking-tighter leading-none mb-3">
+                <p className="font-display font-semibold text-7xl md:text-8xl lg:text-[120px] tracking-tighter leading-none mb-4">
                   {slide.stat}
                 </p>
               )}
-              <p className="font-display font-semibold text-xl md:text-2xl lg:text-[30px] tracking-tight leading-[1.1]">
+              <p className="font-display font-semibold text-2xl md:text-3xl lg:text-[38px] tracking-tight leading-[1.1]">
                 {slide.title}
               </p>
             </div>
