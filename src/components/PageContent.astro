@@ -13,14 +13,28 @@ import FooterSection from "./sections/FooterSection.astro";
 import PopupModal from "./react/PopupModal.tsx";
 import Navbar from "./react/Navbar.tsx";
 import { localeLabels, getLocalePath, type Locale } from "../i18n/config";
-import { getContent } from "../i18n/content";
+import { getSanityContent, getSiteSettings } from "../lib/sanity";
 
 interface Props {
   lang: Locale;
 }
 
 const { lang } = Astro.props;
-const content = getContent(lang);
+const content = await getSanityContent(lang);
+const settings = await getSiteSettings();
+
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || "";
+
+// Build modal texts from site settings
+const pm = settings?.popupModal;
+const modalTexts = pm ? {
+  title: pm[`title_${lang}`] || pm.title_en,
+  description: pm[`description_${lang}`] || pm.description_en,
+  namePlaceholder: pm[`namePlaceholder_${lang}`] || pm.namePlaceholder_en,
+  emailPlaceholder: pm[`emailPlaceholder_${lang}`] || pm.emailPlaceholder_en,
+  messagePlaceholder: pm[`messagePlaceholder_${lang}`] || pm.messagePlaceholder_en,
+  submitText: pm[`submitText_${lang}`] || pm.submitText_en,
+} : undefined;
 
 const localeOptions = (['en', 'nl', 'fr', 'de'] as const).map((code) => ({
   code,
@@ -51,4 +65,4 @@ const localeOptions = (['en', 'nl', 'fr', 'de'] as const).map((code) => ({
   <FooterSection data={content.footer} />
 </main>
 
-<PopupModal client:load />
+<PopupModal client:load lang={lang} turnstileSiteKey={turnstileSiteKey} modalTexts={modalTexts} />

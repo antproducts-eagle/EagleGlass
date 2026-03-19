@@ -1,0 +1,50 @@
+import { defineType, defineField } from "sanity";
+
+export default defineType({
+  name: "siteSettings",
+  title: "Site Settings",
+  type: "document",
+  fields: [
+    defineField({
+      name: "contactEmail",
+      title: "Contact Email",
+      description: "Email address where form submissions will be sent",
+      type: "string",
+      validation: (r) => r.required().email(),
+    }),
+    defineField({
+      name: "popupModal",
+      title: "Popup Modal Texts",
+      type: "object",
+      fields: [
+        defineField({ name: "title_en", title: "Title (EN)", type: "string" }),
+        defineField({ name: "title_de", title: "Title (DE)", type: "string" }),
+        defineField({ name: "title_fr", title: "Title (FR)", type: "string" }),
+        defineField({ name: "title_nl", title: "Title (NL)", type: "string" }),
+        defineField({ name: "description_en", title: "Description (EN)", type: "string" }),
+        defineField({ name: "description_de", title: "Description (DE)", type: "string" }),
+        defineField({ name: "description_fr", title: "Description (FR)", type: "string" }),
+        defineField({ name: "description_nl", title: "Description (NL)", type: "string" }),
+        defineField({ name: "namePlaceholder_en", title: "Name Placeholder (EN)", type: "string" }),
+        defineField({ name: "namePlaceholder_de", title: "Name Placeholder (DE)", type: "string" }),
+        defineField({ name: "namePlaceholder_fr", title: "Name Placeholder (FR)", type: "string" }),
+        defineField({ name: "namePlaceholder_nl", title: "Name Placeholder (NL)", type: "string" }),
+        defineField({ name: "emailPlaceholder_en", title: "Email Placeholder (EN)", type: "string" }),
+        defineField({ name: "emailPlaceholder_de", title: "Email Placeholder (DE)", type: "string" }),
+        defineField({ name: "emailPlaceholder_fr", title: "Email Placeholder (FR)", type: "string" }),
+        defineField({ name: "emailPlaceholder_nl", title: "Email Placeholder (NL)", type: "string" }),
+        defineField({ name: "messagePlaceholder_en", title: "Message Placeholder (EN)", type: "string" }),
+        defineField({ name: "messagePlaceholder_de", title: "Message Placeholder (DE)", type: "string" }),
+        defineField({ name: "messagePlaceholder_fr", title: "Message Placeholder (FR)", type: "string" }),
+        defineField({ name: "messagePlaceholder_nl", title: "Message Placeholder (NL)", type: "string" }),
+        defineField({ name: "submitText_en", title: "Submit Button (EN)", type: "string" }),
+        defineField({ name: "submitText_de", title: "Submit Button (DE)", type: "string" }),
+        defineField({ name: "submitText_fr", title: "Submit Button (FR)", type: "string" }),
+        defineField({ name: "submitText_nl", title: "Submit Button (NL)", type: "string" }),
+      ],
+    }),
+  ],
+  preview: {
+    prepare: () => ({ title: "Site Settings" }),
+  },
+});
