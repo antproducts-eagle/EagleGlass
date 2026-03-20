@@ -2,10 +2,7 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
-import { loadEnv } from 'vite';
-
-const env = loadEnv('', process.cwd(), '');
-const sanityProjectId = env.PUBLIC_SANITY_PROJECT_ID;
+const sanityProjectId = process.env.PUBLIC_SANITY_PROJECT_ID;
 const hasSanity = sanityProjectId && sanityProjectId !== 'YOUR_PROJECT_ID';
 
 const integrations = [react()];
